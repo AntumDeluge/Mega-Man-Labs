@@ -1,6 +1,8 @@
 extends "common.gd"
 
 func _enter() -> void:
+    if owner.explode_on_death:
+        $"../../EffectSpawner".clear_particles()
     get_parent().locked = true
     animation_player.play("spawn")
     owner.is_invincible = true
