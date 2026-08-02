@@ -105,7 +105,7 @@ func _restart() -> void:
 
     emit_signal("restarted")
     player.get_node("EffectSpawner").clear_particles()
-    yield(get_tree().create_timer(0.0 if OS.is_debug_build() else START_DELAY), "timeout")
+    yield(get_tree().create_timer(START_DELAY), "timeout")
     emit_signal("player_ready")
     get_tree().paused = false
 
@@ -126,7 +126,7 @@ func _on_died() -> void:
 
 func _on_boss_died() -> void:
     Global.can_toggle_pause = false
-    yield(get_tree().create_timer(1.0 if OS.is_debug_build() else STAGE_CLEAR_DELAY), "timeout")
+    yield(get_tree().create_timer(STAGE_CLEAR_DELAY), "timeout")
     emit_signal("stage_cleared")
 
 func _on_stage_exited() -> void:
