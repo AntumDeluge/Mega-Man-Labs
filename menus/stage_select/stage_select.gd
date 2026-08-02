@@ -21,8 +21,7 @@ func _ready() -> void:
     $"Buttons/ButtonMidCenter".grab_focus()
     $"Background/ShopButton".play()
 
-    if not OS.is_debug_build():
-        $Music.play()
+    $Music.play()
 
     var index: int = 0
     for button in $Buttons.get_children():
