@@ -7,8 +7,7 @@ var exit_button: Button
 
 func _ready() -> void:
     _create_main_buttons()
-    if not OS.is_debug_build():
-        $TitleMusic.play()
+    $TitleMusic.play()
 
 func _input(event: InputEvent) -> void:
     if (event is InputEventJoypadButton
