@@ -182,6 +182,8 @@ func _connect_signals() -> void:
     _try_connect(self, "restarted", _gui_ready, "on_restarted")
     _try_connect(self, "restarted", _gui_fade_effects, "fade_in", [FADE_IN_DURATION])
     _try_connect(self, "restarted", _gui_bar, "on_restarted")
+    if OS.is_debug_build():
+        _try_connect(self, "restarted", _gui_boss_bar, "on_restarted")
 
     if has_node("Sections"):
         for section in $Sections.get_children():
