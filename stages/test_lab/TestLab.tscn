@@ -255,7 +255,6 @@ script = ExtResource( 2 )
 
 [node name="EnemyShieldAttacker02" parent="Sections/Section10" instance=ExtResource( 4 )]
 position = Vector2( 288, 176 )
-max_distance = 192
 
 [node name="Section11" parent="Sections" instance=ExtResource( 6 )]
 position = Vector2( 1792, -448 )
@@ -273,7 +272,6 @@ script = ExtResource( 2 )
 
 [node name="EnemyShieldAttacker03" parent="Sections/Section11" instance=ExtResource( 4 )]
 position = Vector2( 736, 176 )
-max_distance = 192
 
 [node name="Section12" parent="Sections" instance=ExtResource( 6 )]
 position = Vector2( 2560, -448 )
@@ -291,7 +289,6 @@ script = ExtResource( 2 )
 
 [node name="EnemyShieldAttacker04" parent="Sections/Section12" instance=ExtResource( 4 )]
 position = Vector2( 224, 63 )
-max_distance = 192
 
 [node name="Section13" parent="Sections" instance=ExtResource( 6 )]
 position = Vector2( 2816, -224 )
