@@ -103,6 +103,12 @@ func _restart() -> void:
     GameState.reset_enemy_count()
     _set_stage_start_pos()
 
+    # workaround to align camera to start/checkpoint section during "ready" animation
+    var active_section = _get_player_section()
+    if active_section:
+        current_camera.limit_left = active_section.position.x
+        current_camera.limit_bottom = active_section.position.y + active_section.height
+
     emit_signal("restarted")
     yield(get_tree().create_timer(0.0 if OS.is_debug_build() else START_DELAY), "timeout")
     emit_signal("player_ready")
