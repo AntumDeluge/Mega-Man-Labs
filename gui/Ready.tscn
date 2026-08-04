@@ -45,4 +45,3 @@ text = "READY"
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 anims/ready = SubResource( 2 )
-
