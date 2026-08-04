@@ -302,3 +302,14 @@ func _sort_ladder_tiles(item_1: Vector2, item_2: Vector2) -> bool:
             return true
         else:
             return false
+
+# Retrieves section node based on player's position.
+func _get_player_section() -> Section:
+    var sections = get_node_or_null("Sections")
+    if sections:
+        for section in sections.get_children():
+            if section is Section:
+                var rect = Rect2(section.global_position, Vector2(section.width, section.height))
+                if rect.has_point(player.global_position):
+                    return section
+    return null
