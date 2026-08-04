@@ -3,7 +3,6 @@
 [ext_resource path="res://stages/assets/checkpoint.gd" type="Script" id=1]
 [ext_resource path="res://characters/player/sprites/mega_man/Idle.png" type="Texture" id=2]
 
-
 [node name="Checkpoint01" type="Area2D"]
 monitoring = false
 collision_layer = 0
