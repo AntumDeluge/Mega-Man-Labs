@@ -41,3 +41,6 @@ func _init_custom_project_settings() -> void:
     if not ProjectSettings.has_setting("custom/gui/show_fps"):
         ProjectSettings.set_setting("custom/gui/show_fps", false)
     ProjectSettings.set_initial_value("custom/gui/show_fps", false)
+    if not ProjectSettings.has_setting("custom/gui/align_boss_bar_left"):
+        ProjectSettings.set_setting("custom/gui/align_boss_bar_left", false)
+    ProjectSettings.set_initial_value("custom/gui/align_boss_bar_left", false)

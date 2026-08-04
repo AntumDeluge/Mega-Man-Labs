@@ -33,6 +33,7 @@ onready var _gui_ready := $"GUI/Ready"
 onready var _gui_fade_effects := $"GUI/FadeEffects"
 onready var _gui_bar := $"GUI/MarginContainer/LifeEnergyBar"
 onready var _gui_weapon_bar := $"GUI/MarginContainer/LifeEnergyBar/WeaponEnergyBar"
+onready var _gui_boss_bar := $"GUI/MarginContainer/LifeEnergyBar/BossBar"
 onready var _gui_pause := $"GUI/Pause"
 onready var _gui_game_over := $"GUI/GameOver"
 onready var _gui_weapon_icon_overhead := $"GUI/WeaponIconOverhead"
@@ -58,6 +59,13 @@ func _ready() -> void:
 
     if Engine.is_editor_hint():
         return
+
+    if ProjectSettings.get_setting("custom/gui/align_boss_bar_left"):
+        # align boss energy bar next to main bars
+        if _gui_boss_bar:
+            _gui_boss_bar.anchor_left = 0
+            _gui_boss_bar.anchor_right = 0
+            _gui_boss_bar.margin_left = 36
 
     _add_instant_death_areas()
     _add_ladder_areas()
