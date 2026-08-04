@@ -27,8 +27,8 @@ anchor_bottom = 0.9
 theme = ExtResource( 2 )
 
 [node name="Logo" type="TextureRect" parent="VBoxContainer"]
-margin_left = 62.0
-margin_right = 244.0
+margin_left = 485.0
+margin_right = 667.0
 margin_bottom = 56.0
 size_flags_horizontal = 4
 size_flags_vertical = 2
@@ -36,10 +36,10 @@ size_flags_stretch_ratio = 1.8
 texture = ExtResource( 3 )
 
 [node name="Buttons" type="VBoxContainer" parent="VBoxContainer"]
-margin_left = 133.0
-margin_top = 117.0
-margin_right = 173.0
-margin_bottom = 125.0
+margin_left = 556.0
+margin_top = 549.0
+margin_right = 596.0
+margin_bottom = 557.0
 size_flags_horizontal = 4
 custom_constants/separation = 7
 alignment = 1
@@ -51,10 +51,10 @@ text = "START"
 align = 1
 
 [node name="Info" type="Label" parent="VBoxContainer"]
-margin_left = 65.0
-margin_top = 173.0
-margin_right = 241.0
-margin_bottom = 192.0
+margin_left = 488.0
+margin_top = 845.0
+margin_right = 664.0
+margin_bottom = 864.0
 size_flags_horizontal = 4
 size_flags_vertical = 10
 custom_fonts/font = SubResource( 1 )
