@@ -16,3 +16,6 @@ export_presets.cfg
 sandbox/
 release/
 export.bat
+
+# Build output
+build/
