@@ -19,3 +19,7 @@ export.bat
 
 # Build output
 build/
+
+# Game directory or symbolic link
+game
+game/
